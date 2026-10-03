@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Брезенхем</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Брезенхем</h1>
+
+    <div class="controls">
+        <label>x1: <input type="number" id="x1" value="2"></label>
+        <label>y1: <input type="number" id="y1" value="2"></label>
+        <label>x2: <input type="number" id="x2" value="20"></label>
+        <label>y2: <input type="number" id="y2" value="8"></label>
+
+        <select id="algorithm">
+            <option value="dda">ЦДА</option>
+            <option value="bresenham">Брезенхем</option>
+        </select>
+
+        <button id="build">Построить</button>
+        <button id="test">Тест времени</button>
+    </div>
+
+    <div class="canvas-wrap">
+        <canvas id="canvas"></canvas>
+
+        <div class="pixels-panel">
+            <h3>Пиксели</h3>
+            <ol id="pixels-list"></ol>
+        </div>
+    </div>
+
+    <div id="steps-section">
+        <h2>Таблица работы Брезенхема</h2>
+        <table id="steps">
+            <thead>
+                <tr>
+                    <th>шаг</th>
+                    <th>x</th>
+                    <th>y</th>
+                    <th>error</th>
+                    <th>error2</th>
+                    <th>изменится</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

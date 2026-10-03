@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Анализатор чисел</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Анализатор чисел</h1>
+
+    <div class="controls">
+        <input type="number" id="number-input" placeholder="Введите число">
+        <button id="button-add">Добавить</button>
+        <button id="button-remove">Удалить последнее</button>
+        <button id="button-clear">Очистить</button>
+    </div>
+
+    <h2>Список чисел</h2>
+    <ul id="numbers-list"></ul>
+
+    <h2>Статистика</h2>
+    <table class="stats">
+        <tr><td>Количество:</td><td id="stat-count">0</td></tr>
+        <tr><td>Сумма:</td><td id="stat-sum">0</td></tr>
+        <tr><td>Среднее:</td><td id="stat-average">-</td></tr>
+        <tr><td>Минимум:</td><td id="stat-min">-</td></tr>
+        <tr><td>Максимум:</td><td id="stat-max">-</td></tr>
+    </table>
+
+    <script src="app.js"></script>
+</body>
+</html>

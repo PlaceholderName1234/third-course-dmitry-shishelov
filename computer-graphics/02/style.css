@@ -1,0 +1,84 @@
+body {
+    font-family: Arial;
+    background: #f0f0f0;
+    padding: 20px;
+}
+
+h1 { font-size: 20px; }
+h2 { font-size: 18px; }
+h3 { font-size: 14px; margin: 0 0 8px 0; }
+
+.controls {
+    margin-bottom: 16px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.controls label { font-size: 14px; }
+
+.controls input {
+    width: 60px;
+    padding: 4px;
+    font-size: 14px;
+}
+
+button, select {
+    padding: 6px 14px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+button:hover { background: #e8e8e8; }
+
+.canvas-wrap {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+canvas {
+    background: #ffffff;
+    border: 1px solid #ccc;
+    display: block;
+}
+
+.pixels-panel {
+    background: #ffffff;
+    border: 1px solid #ccc;
+    padding: 10px 16px;
+    min-width: 130px;
+    max-height: 300px;
+    overflow-y: auto;
+    font-size: 13px;
+    font-family: monospace;
+}
+
+.pixels-panel ol {
+    margin: 0;
+    padding-left: 24px;
+}
+
+.pixels-panel li { padding: 1px 0; }
+
+table {
+    margin-top: 10px;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 4px 8px;
+    text-align: center;
+}
+
+table th { background: #f7f7f7; }
+
+#steps-section.hidden {
+    display: none;
+}
