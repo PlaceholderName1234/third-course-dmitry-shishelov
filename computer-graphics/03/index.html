@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Алгоритм средней точки</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Окружность по алгоритму средней точки</h1>
+
+    <div class="controls">
+        <label>cx: <input type="number" id="cx" value="20" min="0"></label>
+        <label>cy: <input type="number" id="cy" value="15" min="0"></label>
+        <label>r:  <input type="number" id="r"  value="5"  min="1"></label>
+        <button id="btn-build">Построить</button>
+        <button id="btn-clear">Очистить</button>
+        <label class="checkbox">
+            <input type="checkbox" id="show-symmetry"> Показать симметрию
+        </label>
+        <label class="checkbox">
+            <input type="checkbox" id="show-formula"> Формула (для сравнения)
+        </label>
+    </div>
+
+    <canvas id="canvas"></canvas>
+
+    <h2>Таблица шагов</h2>
+    <table id="steps">
+        <thead>
+            <tr>
+                <th>шаг</th>
+                <th>x</th>
+                <th>y</th>
+                <th>d до шага</th>
+                <th>выбранный вариант</th>
+                <th>d после шага</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="app.js"></script>
+</body>
+</html>

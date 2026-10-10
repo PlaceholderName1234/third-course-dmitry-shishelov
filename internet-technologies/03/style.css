@@ -1,0 +1,90 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #222;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 32px 20px;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+button,
+input {
+  padding: 10px 12px;
+  font-size: 16px;
+}
+
+input {
+  min-width: 300px;
+  flex: 1;
+}
+
+.info {
+  margin-bottom: 20px;
+}
+
+.users {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 14px;
+}
+
+/* TODO: добавьте оформление карточек пользователей */
+
+.status {
+  margin: 0 0 8px;
+  font-size: 15px;
+}
+
+.status--loading {
+  color: #555;
+}
+
+.status--error {
+  color: #dc3545;
+}
+
+#statistics {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.user-card {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.user-card__name {
+  margin: 0 0 8px;
+  font-size: 16px;
+  color: #111;
+}
+
+.user-card__row {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+.user-card__label {
+  color: #888;
+}
