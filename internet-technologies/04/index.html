@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Занятие 4</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Публикации</h1>
+
+    <section class="info">
+      <p id="status" class="status">Загрузка...</p>
+      <p id="statistics" class="statistics"></p>
+    </section>
+
+    <section class="controls">
+      <button id="loadButton">Обновить</button>
+      <input
+        id="filterInput"
+        type="text"
+        placeholder="Поиск по заголовку или тексту"
+      >
+    </section>
+
+    <form id="postForm" class="post-form">
+      <h2 id="formTitle">Новая публикация</h2>
+
+      <label>
+        Заголовок
+        <input type="text" id="titleInput" required>
+      </label>
+
+      <label>
+        Текст
+        <textarea id="bodyInput" rows="4" required></textarea>
+      </label>
+
+      <div class="form-actions">
+        <button type="submit" id="submitButton">Сохранить</button>
+        <button type="button" id="cancelButton">Отмена</button>
+      </div>
+    </form>
+
+    <section id="posts" class="posts"></section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Занятие 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Отсечение отрезков алгоритмом Коэна–Сазерленда</h1>
+
+    <fieldset>
+        <legend>Окно отсечения</legend>
+        <label>xmin: <input type="number" id="xmin" value="10"></label>
+        <label>ymin: <input type="number" id="ymin" value="5"></label>
+        <label>xmax: <input type="number" id="xmax" value="30"></label>
+        <label>ymax: <input type="number" id="ymax" value="25"></label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Отрезок</legend>
+        <label>x1: <input type="number" id="x1" value="8"></label>
+        <label>y1: <input type="number" id="y1" value="3"></label>
+        <label>x2: <input type="number" id="x2" value="32"></label>
+        <label>y2: <input type="number" id="y2" value="27"></label>
+    </fieldset>
+
+    <div class="controls">
+        <button id="button-build">Построить</button>
+        <button id="button-polyline">Ломаная</button>
+        <button id="button-random">Случайные отрезки</button>
+        <button id="button-clear">Очистить</button>
+    </div>
+
+    <div id="codes" class="codes"></div>
+
+    <canvas id="canvas"></canvas>
+
+    <h2>Таблица итераций</h2>
+    <table id="steps">
+        <thead>
+            <tr>
+                <th>шаг</th>
+                <th>A</th>
+                <th>codeA</th>
+                <th>B</th>
+                <th>codeB</th>
+                <th>действие</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <div id="stats" class="stats"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
