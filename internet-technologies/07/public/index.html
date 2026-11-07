@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Занятие 7</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Книги Толкина</h1>
+
+        <div id="message" class="message"></div>
+
+        <form id="book-form" class="form">
+            <input type="text" id="title-input" placeholder="Название книги" required>
+            <input type="number" id="year-input" placeholder="Год">
+            <button type="submit" id="submit-button">Добавить</button>
+        </form>
+
+        <div class="controls">
+            <button id="refresh-button">Обновить список</button>
+            <label>
+                <input type="checkbox" id="filter-read"> Показать только прочитанные
+            </label>
+        </div>
+
+        <ul id="book-list" class="book-list"></ul>
+    </main>
+
+    <script src="/app.js"></script>
+</body>
+</html>
