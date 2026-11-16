@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Занятие 8</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Книги Толкина</h1>
+
+    <div id="message" class="message"></div>
+
+    <form id="book-form" class="form">
+      <input type="text" id="title-input" placeholder="Название книги" required>
+      <input type="number" id="year-input" placeholder="Год">
+      <button type="submit" id="submit-button">Добавить</button>
+    </form>
+
+    <div class="filters">
+      <input type="text" id="search-input" placeholder="Поиск по названию">
+      <select id="read-filter">
+        <option value="">Все</option>
+        <option value="true">Прочитано</option>
+        <option value="false">Не прочитано</option>
+      </select>
+      <select id="sort-select">
+        <option value="title:asc">Название ↑</option>
+        <option value="title:desc">Название ↓</option>
+        <option value="year:asc">Год ↑</option>
+        <option value="year:desc">Год ↓</option>
+      </select>
+      <select id="limit-select">
+        <option value="5" selected>5 на стр.</option>
+        <option value="10">10 на стр.</option>
+      </select>
+    </div>
+
+    <ul id="book-list" class="book-list"></ul>
+
+    <div class="pagination">
+      <button id="prev-button" type="button">Назад</button>
+      <span id="page-info"></span>
+      <button id="next-button" type="button">Вперёд</button>
+    </div>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
