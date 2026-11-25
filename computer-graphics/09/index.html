@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Занятие 9</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Закрашенные 3D-модели</h1>
+
+  <div class="layout">
+    <div class="controls">
+      <fieldset>
+        <legend>Модель</legend>
+        <select id="model-select">
+          <option value="cube">Куб</option>
+          <option value="pyramid">Пирамида</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Режим отрисовки</legend>
+        <label>
+          <input type="radio" name="render-mode" value="wireframe" checked> Каркас
+        </label>
+        <label>
+          <input type="radio" name="render-mode" value="filled"> Закрашенная модель
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Поворот (в градусах)</legend>
+        <label>X: <input type="number" id="rot-x" value="0" step="1"></label>
+        <label>Y: <input type="number" id="rot-y" value="0" step="1"></label>
+        <label>Z: <input type="number" id="rot-z" value="0" step="1"></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Масштаб и камера</legend>
+        <label>scale: <input type="number" id="scale" value="1" step="1"></label>
+        <label>Расстояние: <input type="number" id="tz" value="5" step="1"></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Проекция</legend>
+        <label>
+          <input type="radio" name="projection" value="ortho" checked> Ортографическая
+        </label>
+        <label>
+          <input type="radio" name="projection" value="perspective"> Перспективная
+        </label>
+        <label>f: <input type="number" id="focal" value="300" step="10"></label>
+      </fieldset>
+
+      <div class="buttons">
+        <button id="btn-toggle-anim">Пауза</button>
+        <button id="btn-reset">Сброс</button>
+      </div>
+    </div>
+
+    <div class="canvas-wrap">
+      <canvas id="canvas" width="600" height="500"></canvas>
+    </div>
+  </div>
+
+  <h2>Диагностика</h2>
+  <pre id="stats-output">—</pre>
+
+  <script src="app.js"></script>
+</body>
+</html>
